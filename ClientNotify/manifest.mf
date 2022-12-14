@@ -1,0 +1,2 @@
+Class-path: ..\Common\Common.jar
+Main-Class: client.services.ClientObject

@@ -1,5 +1,6 @@
 @echo off
 
+title ClientSensor
 javac -d bin -sourcepath src -cp ..\Common\Common.jar src\client\view\*
 javac -d bin -sourcepath src -cp ..\Common\Common.jar src\client\utilities\*
 javac -d bin -sourcepath src -cp ..\Common\Common.jar src\client\services\*

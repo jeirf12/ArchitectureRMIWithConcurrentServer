@@ -1,5 +1,6 @@
 @echo off
 
+title ServerAlert
 javac -d bin -sourcepath src -cp ..\Common\Common.jar src\server\utilities\*
 javac -d bin -sourcepath src -cp ..\Common\Common.jar src\server\domain\*
 javac -d bin -sourcepath src -cp ..\Common\Common.jar src\server\controllers\*

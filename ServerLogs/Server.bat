@@ -1,5 +1,6 @@
 @echo off
 
+title ServerLogs
 javac -d bin -sourcepath src -cp ..\Common\Common.jar;..\ServerAlert\gson-2.8.2.jar src\server\infra\*
 javac -d bin -sourcepath src -cp ..\Common\Common.jar;..\ServerAlert\gson-2.8.2.jar src\server\services\*
 

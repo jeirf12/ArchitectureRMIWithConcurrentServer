@@ -18,8 +18,13 @@ public class ClientObject {
     public static void main(String[] args) {
         int numPortRMIRegistry = 0;
         String addressIpRMIRegistry = "";
-        addressIpRMIRegistry = Console.read("Cuál es la dirección ip donde se encuentra el rmiregistry ?", addressIpRMIRegistry, false);
-        numPortRMIRegistry = Console.read("Cuál es el numero de puerto por el cual escucha el rmiregistry ?", numPortRMIRegistry, false);
+        // Descomente estas lineas, si quiere ingresar datos por consola.
+        // addressIpRMIRegistry = Console.read("Cuál es la dirección ip donde se encuentra el rmiregistry ?", addressIpRMIRegistry, false);
+        // numPortRMIRegistry = Console.read("Cuál es el numero de puerto por el cual escucha el rmiregistry ?", numPortRMIRegistry, false);
+
+        addressIpRMIRegistry = "localhost";
+        numPortRMIRegistry = 2020;
+
         objRemoteSensor = (IControllerManageSensor) RegisterClient.getObjectRemote(addressIpRMIRegistry, numPortRMIRegistry, "objServicioGestionSensor");
         MenuClient objMenu = new MenuClient("          === Menu ===          ", new String[]{"Ingresar y enviar datos del sensor"}, objRemoteSensor);
     }  

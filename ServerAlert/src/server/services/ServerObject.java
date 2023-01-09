@@ -17,9 +17,13 @@ public class ServerObject {
     public static void main(String[] args) throws RemoteException, Exception {
         int numPortRMIRegistry = 0;
         String addressIpRMIRegistry = " ";
-        addressIpRMIRegistry = Console.read("Cuál es la dirección ip donde se encuentra el rmiRegistry ?", addressIpRMIRegistry, false);
-        numPortRMIRegistry = Console.read("Cuál es el numero de puerto por el cual escucha el rmiRegistry ?", numPortRMIRegistry, false);
+        // Descomente estas lineas, si quiere ingresar datos por consola.
+        // addressIpRMIRegistry = Console.read("Cuál es la dirección ip donde se encuentra el rmiRegistry ?", addressIpRMIRegistry, false);
+        // numPortRMIRegistry = Console.read("Cuál es el numero de puerto por el cual escucha el rmiRegistry ?", numPortRMIRegistry, false);
         
+        addressIpRMIRegistry = "localhost";
+        numPortRMIRegistry = 2020;
+
         IClientAccess serviceLog = Factory.getInstance().getClienteService();
         ControllerManageNotify objRemoteNotify = new ControllerManageNotify();
         ControllerManageSensor objRemoteSensor = new ControllerManageSensor(objRemoteNotify, serviceLog);

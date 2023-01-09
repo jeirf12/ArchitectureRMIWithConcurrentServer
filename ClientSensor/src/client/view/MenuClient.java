@@ -34,9 +34,9 @@ public class MenuClient extends Menu {
     private void registerSensor() {
         try {
             boolean value = false;
-            double temperature = 0;
-            int numRoom = 0, cardiacFrequency = 0, respiratoryFrequency = 0,
-                    oxigenSaturation = 0, systolic = 0, diastolic = 0;
+            double temperature = -1;
+            int numRoom = -1, cardiacFrequency = -1, respiratoryFrequency = -1,
+                    oxigenSaturation = -1, systolic = -1, diastolic = -1;
             numRoom = Console.read("Digite el numero de la habitacion del paciente: ", numRoom, false);
             cardiacFrequency = Console.read("Digite la frecuencia cardiaca: ", cardiacFrequency, false);
             systolic = Console.read("Digite la presion sistolica: ", systolic, false);

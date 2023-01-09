@@ -1,2 +1,2 @@
-Class-Path: ..\Common\Common.jar
+Class-Path: ..\Common\Common.jar .\gson-2.8.2.jar
 Main-Class: server.services.ServerObject

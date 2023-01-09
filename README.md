@@ -4,9 +4,9 @@
 This model is combined with concurrent servers in a basic project of alerts to detect the deterioration of the patient's hermodynamic stability.
 
 ## User Manual
-When clone this project,
+When clone this project and access the directory,
 ```
-git clone https://github.com/jeirf12/ArchitectureRMIWithConcurrentServer
+git clone https://github.com/jeirf12/ArchitectureRMIWithConcurrentServer && cd ArchitectureRMIWithConcurrentServer
 ```
 ### Pre-requisites Before Compilation and Execution
 **Before you start compiling the project, you must have the following programs installed.**
